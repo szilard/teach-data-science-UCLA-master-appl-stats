@@ -44,8 +44,8 @@ Week 10: Student project presentations. Course discussions/Q&A session. Summary 
 
 ### Grading: 
 
-40% assignment #1: exploratory data analysis and data visualization project 
-40% assignment #2: machine learning project 
+40% assignment #1: exploratory data analysis and data visualization project <br>
+40% assignment #2: machine learning project <br>
 20% student presentations 
 
 It is imperative for these assignments that students already have a good knowledge of R (404 course) and a good understanding of the elements of data analysis (405 course) before taking this current course. 
