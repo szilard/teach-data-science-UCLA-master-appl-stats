@@ -5,8 +5,7 @@
 
 ### Prerequisites: 
 
-404 – Statistical Computing and Programming 
-
+404 – Statistical Computing and Programming <br>
 405 – Data Management 
 
 
