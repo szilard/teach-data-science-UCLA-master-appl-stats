@@ -1,6 +1,6 @@
 ## UCLA Master of Applied Statistics (MAS) 
 
-## Course proposal: Tools in Data Science 
+## Course proposal: 418 - Tools in Data Science 
 
 
 ### Prerequisites: 
@@ -17,7 +17,7 @@ Tools for data acquisition, transformation and analysis, data visualization, mac
 ### Course objectives: 
 
 Despite the new name and the recent hype, Data Science is hardly new, it has in fact solid foundations in statistics and computing technology that go back several decades.
-The 405 – Data Management course lies down the foundations necessary for most data science tasks (data acquisition, exploratory data analysis, data cleaning and transformation, databases, data visualization and data mining) while the 404 – Statistical Computing and Programming course prepares students to use R, the most widely used tool for data science.
+The *405 – Data Management* course lies down the foundations necessary for most data science tasks (data acquisition, exploratory data analysis, data cleaning and transformation, databases, data visualization and data mining) while the *404 – Statistical Computing and Programming* course prepares students to use R, the most widely used tool for data science.
 This proposed course will build on all this knowledge and it will discuss more advanced topics and present more tools (R packages, scalable machine learning libraries, high-performance analytical databases, big data technologies) that are used by data scientists in daily practice.
 The course will also discuss software engineering tools/techniques that are important when working on data science projects or when the results of the projects (models, data visualization dashboards etc.) are deployed in production.
 While this instructor is a great proponent of a good balance of theory and practice, and furthermore in the context of data science advocates a good balance of statistics and computing technology, this course will try to complement the other existing courses in the MAS program, and therefore it might appear as overly tilted towards software systems.
