@@ -58,15 +58,15 @@ It is imperative for these assignments that students already have a good knowled
 
 ### Reading material from papers: 
 
-David Donoho: 50 years of Data Science 
+David Donoho: [50 years of Data Science](https://dl.dropboxusercontent.com/u/23421017/50YearsDataScience.pdf)
 
-Sean Kandel, Andreas Paepcke, Joseph M. Hellerstein, and Jeffrey Heer: Enterprise Data Analysis and Visualization: An Interview Study 
+Sean Kandel, Andreas Paepcke, Joseph M. Hellerstein, and Jeffrey Heer: [Enterprise Data Analysis and Visualization: An Interview Study](http://db.cs.berkeley.edu/papers/vast12-interview.pdf) 
 
-Rexer Analytics: 2013 Data Miner Survey (Summary Report) 
+Rexer Analytics: [2013 Data Miner Survey](http://www.rexeranalytics.com/Data-Miner-Survey-Results-2013.html) (Summary Report) 
 
-Leo Breiman: Statistical Modeling: The Two Cultures 
+Leo Breiman: [Statistical Modeling: The Two Cultures](https://projecteuclid.org/download/pdf_1/euclid.ss/1009213726)
 
-Rich Caruana, Alexandru Niculescu-Mizil: An Empirical Comparison of Supervised Learning Algorithms 
+Rich Caruana, Alexandru Niculescu-Mizil: [An Empirical Comparison of Supervised Learning Algorithms](https://www.cs.cornell.edu/~caruana/ctp/ct.papers/caruana.icml06.pdf)
 
 
 ### Reading material from books: 
@@ -91,8 +91,8 @@ Dorian Pyle: Data Preparation for Data Mining, Morgan Kaufmann, 1999
 
 Micheline Kamber, Jiawei Han, Data Mining: Concepts and Techniques, Morgan Kaufmann, 2nd ed., 2005 
 
-Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani: An Introduction to Statistical Learning with Applications in R 
+Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani: [An Introduction to Statistical Learning with Applications in R](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Sixth%20Printing.pdf)
 
-Trevor Hastie, Robert Tibshirani, Jerome Friedman: The Elements of Statistical Learning, 2nd. ed. 
+Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical Learning, 2nd. ed.](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf)
 
 
