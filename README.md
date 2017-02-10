@@ -91,9 +91,9 @@ Dorian Pyle: Data Preparation for Data Mining, Morgan Kaufmann, 1999
 
 Micheline Kamber, Jiawei Han, Data Mining: Concepts and Techniques, Morgan Kaufmann, 2nd ed., 2005 
 
-Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani: [An Introduction to Statistical Learning with Applications in R](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Sixth%20Printing.pdf)
+Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani: [An Introduction to Statistical Learning with Applications in R](http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Sixth%20Printing.pdf), Springer, 2013
 
-Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical Learning, 2nd. ed.](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf)
+Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical Learning, 2nd. ed.](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf), Springer, 2009
 
 
 
