@@ -32,7 +32,8 @@ Week 4: The Unix toolbox for manipulating files/text and automating tasks. Cloud
 
 Week 5: Foundations for supervised learning (classification/regression): basic algorithms, overfitting, train and test sets, cross-validation, bias-variance tradeoff, regularization, ROC curve for binary classification (various R packages) 
 
-Week 6: Tools for supervised learning 1 (GLM, Lasso, random forest, gradient boosted machines) (R packages, Vowpal Wabbit, xgboost, H2O) 
+Week 6: Tools for supervised learning 1 (GLM, Lasso, random forest, gradient boosted machines) (R packages, Vowpal Wabbit, xgboost, H2O)
+
 Week 7: Tools for supervised learning 2 (support vector machines, neural networks, deep learning, ensembles) (R packages, H2O, libraries for deep learning on GPUs) 
 
 Week 8: Tools for unsupervised learning (K-means clustering, hierarchical clustering) (R packages) 
