@@ -1,6 +1,6 @@
 ## UCLA Master of Applied Statistics (MAS) 
 
-## 418 - Tools in Data Science 
+## STATS 418 - Tools in Data Science 
 
 
 ### Prerequisites: 
@@ -47,16 +47,19 @@ Week 9: Analytical databases (columnar/MPP relational databases), SQL. NoSQL dat
 Week 10: Student project presentations. Course discussions/Q&A session. Summary of the course, conclusions, final thoughts etc. 
 
 
-### Grading: 
 
-40% assignment #1: exploratory data analysis and data visualization project <br>
-40% assignment #2: machine learning project <br>
-20% student presentations 
+### Grading:
 
-It is imperative for these assignments that students already have a good knowledge of R (404 course) and a good understanding of the elements of data analysis (405 course) before taking this current course. 
+TBD
 
 
-### Reading material from papers: 
+
+### Supplemental reading:
+
+(Click on link to open/download paper/free book PDF)
+
+
+#### Papers:
 
 David Donoho: [50 years of Data Science](https://dl.dropboxusercontent.com/u/23421017/50YearsDataScience.pdf)
 
@@ -69,7 +72,7 @@ Leo Breiman: [Statistical Modeling: The Two Cultures](https://projecteuclid.org/
 Rich Caruana, Alexandru Niculescu-Mizil: [An Empirical Comparison of Supervised Learning Algorithms](https://www.cs.cornell.edu/~caruana/ctp/ct.papers/caruana.icml06.pdf)
 
 
-### Reading material from books: 
+#### Books:
 
 John M. Chambers: Software for Data Analysis: Programming with R, Springer, 2008 
 
