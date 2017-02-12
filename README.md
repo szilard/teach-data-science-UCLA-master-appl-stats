@@ -3,6 +3,9 @@
 ## STATS 418 - Tools in Data Science 
 
 
+#### Course designer and main instructor: [Szilard Pafka](https://www.linkedin.com/in/szilard)
+
+
 ### Prerequisites: 
 
 404 – Statistical Computing and Programming <br>
@@ -46,6 +49,11 @@ Week 9: Analytical databases (columnar/MPP relational databases), SQL. NoSQL dat
 
 Week 10: Student project presentations. Course discussions/Q&A session. Summary of the course, conclusions, final thoughts etc. 
 
+
+### Announcements and Q&A:
+
+Class announcements and student Q&A will be done via 
+[github issues](https://github.com/szilard/teach-data-science-UCLA-master-appl-stats/issues).
 
 
 ### Grading:
