@@ -3,7 +3,7 @@
 ## STATS 418 - Tools in Data Science 
 
 
-#### Course designer and main instructor: [Szilard Pafka](https://www.linkedin.com/in/szilard)
+### Course designer and main instructor: [Szilard Pafka](https://www.linkedin.com/in/szilard)
 
 
 ### Course short description: 
@@ -27,7 +27,7 @@ While this instructor is a great proponent of a good balance of theory and pract
 Therefore, it is important to restate here that good statistical and theoretical foundations (e.g. cognitive science for data visualization or a good understanding of machine learning algorithms etc.) are also crucial when conducting data science in practice. 
 
 
-### Course syllabus and schedule: 
+### Syllabus and schedule: 
 
 Week 1: Overview of data science. The elements of a data science project. Overview of tools (R/Python, databases, machine learning libraries, big data tools etc) 
 
