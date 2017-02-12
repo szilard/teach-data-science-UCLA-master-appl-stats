@@ -6,15 +6,15 @@
 ### Course designer and main instructor: [Szilard Pafka](https://www.linkedin.com/in/szilard)
 
 
+### Course short description: 
+
+Tools for data acquisition, transformation and analysis, data visualization, machine learning and tools for reproducible data analysis, collaboration and model deployment used by data scientists in practice. Advanced R packages, analytical databases, high-performance machine learning libraries, big data tools. 
+
+
 ### Prerequisites: 
 
 404 – Statistical Computing and Programming <br>
 405 – Data Management 
-
-
-### Course short description: 
-
-Tools for data acquisition, transformation and analysis, data visualization, machine learning and tools for reproducible data analysis, collaboration and model deployment used by data scientists in practice. Advanced R packages, analytical databases, high-performance machine learning libraries, big data tools. 
 
 
 ### Course objectives: 
