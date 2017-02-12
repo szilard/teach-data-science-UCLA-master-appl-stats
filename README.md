@@ -3,7 +3,7 @@
 ## STATS 418 - Tools in Data Science 
 
 
-#### Course designer and main instructor: [Szilard Pafka](https://www.linkedin.com/in/szilard)
+### Course designer and main instructor: [Szilard Pafka](https://www.linkedin.com/in/szilard)
 
 
 ### Prerequisites: 
