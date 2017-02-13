@@ -3,7 +3,7 @@
 ## STATS 418 - Tools in Data Science 
 
 
-### Course designer and main instructor: [Szilard Pafka](https://www.linkedin.com/in/szilard)
+### Course designer and main instructor: [Szilárd Pafka](https://www.linkedin.com/in/szilard)
 
 
 ### Course short description: 
@@ -48,6 +48,13 @@ Therefore, it is important to restate here that good statistical and theoretical
 [Week 9](wk-09-bigdata): Analytical databases (columnar/MPP relational databases), SQL. NoSQL databases (key-value stores, document databases). “Big data” technologies (Hadoop, HDFS, Map-reduce, Hive, Impala, Spark, EMR etc.) 
 
 [Week 10](wk-10-end): Student project presentations. Course discussions/Q&A session. Summary of the course, conclusions, final thoughts etc. 
+
+
+### Instructors/guest speakers:
+
+[Szilárd Pafka](https://www.linkedin.com/in/szilard) <br>
+[Eduardo Ariño de la Rubia](https://www.linkedin.com/in/earino) <br>
+[Yasmin Lucero](https://www.linkedin.com/in/yasminlucero)
 
 
 ### Announcements and Q&A:
