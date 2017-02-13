@@ -29,7 +29,7 @@ Therefore, it is important to restate here that good statistical and theoretical
 
 ### Syllabus and schedule: 
 
-Week 1: Overview of data science. The elements of a data science project. Overview of tools (R/Python, databases, machine learning libraries, big data tools etc) 
+[Week 1](wk-01-intro): Overview of data science. The elements of a data science project. Overview of tools (R/Python, databases, machine learning libraries, big data tools etc) 
 
 Week 2: Tools for reproducible research/productive data analysis and collaboration (Rmarkdown, Jupyter notebooks, git/Github). 
 
