@@ -106,5 +106,7 @@ Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani: [An Introduction
 
 Trevor Hastie, Robert Tibshirani, Jerome Friedman: [The Elements of Statistical Learning, 2nd. ed.](http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf), Springer, 2009
 
+ Eric Redmond and Jim R. Wilson: [Seven Databases in Seven Weeks: A Guide to Modern Databases and the NoSQL Movement] (https://pragprog.com/book/rwdata/seven-databases-in-seven-weeks), The Pragmatic Bookshelf, 2012
+
 
 
