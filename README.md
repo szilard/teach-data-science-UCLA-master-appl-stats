@@ -29,7 +29,7 @@ Therefore, it is important to restate here that good statistical and theoretical
 
 ### Syllabus and schedule: 
 
-[Week 1](wk-01-intro): Overview of data science. The elements of a data science project. Overview of tools (R/Python, databases, machine learning libraries, big data tools etc) 
+[Week 1](wk-01-intro): \[4/5\] Overview of data science. The elements of a data science project. Overview of tools (R/Python, databases, machine learning libraries, big data tools etc) 
 
 [Week 2](wk-02-unix-cloud): The Unix toolbox for manipulating files/text and automating tasks. Cloud computing for scaling up data science (EC2). Virtualization for quick experimentation and/or for reproducible deployment (vagrant, docker). 
 
