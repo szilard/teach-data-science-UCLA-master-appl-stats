@@ -29,25 +29,25 @@ Therefore, it is important to restate here that good statistical and theoretical
 
 ### Syllabus and schedule: 
 
-[Week 1](wk-01-intro): \[4/5\] Overview of data science. The elements of a data science project. Overview of tools (R/Python, databases, machine learning libraries, big data tools etc) 
+[Week 1](wk-01-intro) \[4/5\]: Overview of data science. The elements of a data science project. Overview of tools (R/Python, databases, machine learning libraries, big data tools etc) 
 
-[Week 2](wk-02-unix-cloud): The Unix toolbox for manipulating files/text and automating tasks. Cloud computing for scaling up data science (EC2). Virtualization for quick experimentation and/or for reproducible deployment (vagrant, docker). 
+[Week 2](wk-02-unix-cloud) \[4/12\]: The Unix toolbox for manipulating files/text and automating tasks. Cloud computing for scaling up data science (EC2). Virtualization for quick experimentation and/or for reproducible deployment (vagrant, docker). 
 
-[Week 3](wk-03-repro): Tools for reproducible research/productive data analysis and collaboration (Rmarkdown, Jupyter notebooks, git/Github). 
+[Week 3](wk-03-repro) \[4/19\]: Tools for reproducible research/productive data analysis and collaboration (Rmarkdown, Jupyter notebooks, git/Github). 
 
-[Week 4](wk-04-datavis): Tools for data visualization: ggplot2, shiny (interactive web applications with R), shiny dashboards 
+[Week 4](wk-04-datavis) \[4/26\]: Tools for data visualization: ggplot2, shiny (interactive web applications with R), shiny dashboards 
 
-[Week 5](wk-05-ML): Foundations for supervised learning (classification/regression): basic algorithms, overfitting, train and test sets, cross-validation, bias-variance tradeoff, regularization, ROC curve for binary classification (various R packages) 
+[Week 5](wk-05-ML) \[5/3\]: Foundations for supervised learning (classification/regression): basic algorithms, overfitting, train and test sets, cross-validation, bias-variance tradeoff, regularization, ROC curve for binary classification (various R packages) 
 
-[Week 6](wk-06-ML): Tools for supervised learning 1 (GLM, Lasso, random forest, gradient boosted machines) (R packages, Vowpal Wabbit, xgboost, H2O)
+[Week 6](wk-06-ML) \[5/10\]: Tools for supervised learning 1 (GLM, Lasso, random forest, gradient boosted machines) (R packages, Vowpal Wabbit, xgboost, H2O)
 
-[Week 7](wk-07-bigdata): Analytical databases (columnar/MPP relational databases), SQL. NoSQL databases (key-value stores, document databases). “Big data” technologies (Hadoop, HDFS, Map-reduce, Hive, Impala, Spark, EMR etc.) 
+[Week 7](wk-07-bigdata) \[5/17\]: Analytical databases (columnar/MPP relational databases), SQL. NoSQL databases (key-value stores, document databases). “Big data” technologies (Hadoop, HDFS, Map-reduce, Hive, Impala, Spark, EMR etc.) 
 
-[Week 8](wk-08-ML): Tools for supervised learning 2 (support vector machines, neural networks, deep learning, ensembles) (R packages, H2O, libraries for deep learning on GPUs) 
+[Week 8](wk-08-ML) \[5/24\]: Tools for supervised learning 2 (support vector machines, neural networks, deep learning, ensembles) (R packages, H2O, libraries for deep learning on GPUs) 
 
-[Week 9](wk-09-ML): Tools for unsupervised learning (K-means clustering, hierarchical clustering) (R packages) 
+[Week 9](wk-09-ML) \[5/31\]: Tools for unsupervised learning (K-means clustering, hierarchical clustering) (R packages) 
 
-[Week 10](wk-10-end): Course discussions/Q&A session. Summary of the course, conclusions, final thoughts etc. 
+[Week 10](wk-10-end) \[6/7\]: Course discussions/Q&A session. Summary of the course, conclusions, final thoughts etc. 
 
 
 ### Instructors/guest speakers:
