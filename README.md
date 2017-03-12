@@ -31,11 +31,11 @@ Therefore, it is important to restate here that good statistical and theoretical
 
 [Week 1](wk-01-intro) \[4/5\]: Overview of data science. The elements of a data science project. Overview of tools (R/Python, databases, machine learning libraries, big data tools etc) 
 
-[Week 2](wk-02-unix-cloud) \[4/12\]: The Unix toolbox for manipulating files/text and automating tasks. Cloud computing for scaling up data science (EC2). Virtualization for quick experimentation and/or for reproducible deployment (vagrant, docker). 
+[Week 2](wk-02-unix-cloud) \[4/12\]: The Unix toolbox for manipulating files/text and automating tasks. Unix gone wrong, debugging the environment. Cloud computing for scaling up data science (demo). 
 
 [Week 3](wk-03-repro) \[4/19\]: Tools for reproducible research/productive data analysis and collaboration (Rmarkdown, Jupyter notebooks, git/Github). 
 
-[Week 4](wk-04-datavis) \[4/26\]: Tools for data visualization: ggplot2, shiny (interactive web applications with R), shiny dashboards 
+[Week 4](wk-04-datavis) \[4/26\]: Tools for data visualization: ggplot2, ggraph, shiny (interactive web applications with R) / shiny dashboards 
 
 [Week 5](wk-05-ML) \[5/3\]: Foundations for supervised learning (classification/regression): basic algorithms, overfitting, train and test sets, cross-validation, bias-variance tradeoff, regularization, ROC curve for binary classification (various R packages) 
 
