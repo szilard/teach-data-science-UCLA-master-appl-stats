@@ -69,7 +69,7 @@ Class Participation 10% <br>
 Home work (4 assignments) 60% <br>
 Final Exam 30%
 
-Sample exam questions [here](assessment/sample_exam_questions.md)
+Sample exam questions [here](z_assessment/sample_exam_questions.md)
 
 
 
