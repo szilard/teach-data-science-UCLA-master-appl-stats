@@ -1,6 +1,14 @@
 
 ### Sample exam questions:
 
+
+#### Unix/cloud/repro/datavis/shiny
+
+**1.** ...
+
+
+#### Machine learning
+
 **1.** Describe briefly the steps in a typical data science project.
 
 **2.** Describe the supervised learning problem in general.
@@ -28,6 +36,8 @@
 **13.** Describe hierarchial clustering.
 
 
+#### Databases/big data
 
+**1.** ...
 
 
