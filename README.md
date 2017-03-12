@@ -65,8 +65,8 @@ Class announcements and student Q&A will be done via
 
 ### Grading:
 
-Class Participation 10%
-Home work (4 assignmets) 60%
+Class Participation 10% <br>
+Home work (4 assignmets) 60% <br>
 Final Exam 30%
 
 
