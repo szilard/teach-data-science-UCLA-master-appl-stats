@@ -65,7 +65,9 @@ Class announcements and student Q&A will be done via
 
 ### Grading:
 
-TBD
+Class Participation 10%
+Home work (4 assignmets) 60%
+Final Exam 30%
 
 
 
