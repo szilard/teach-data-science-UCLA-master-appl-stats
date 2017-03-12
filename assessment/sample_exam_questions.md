@@ -1,5 +1,5 @@
 
-#### Sample exam questions:
+### Sample exam questions:
 
 **1.** Describe briefly the steps in a typical data science project.
 
