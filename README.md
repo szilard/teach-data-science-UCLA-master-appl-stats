@@ -35,13 +35,13 @@ Therefore, it is important to restate here that good statistical and theoretical
 
 [Week 3](wk-03-repro) \[4/19\]: Tools for reproducible research/productive data analysis and collaboration (Rmarkdown, Jupyter notebooks, git/Github). 
 
-[Week 4](wk-04-datavis) \[4/26\]: Tools for data visualization: ggplot2, ggraph, shiny (interactive web applications with R) / shiny dashboards 
+[Week 4](wk-04-datavis-shiny) \[4/26\]: Tools for data visualization: ggplot2, ggraph, shiny (interactive web applications with R) / shiny dashboards 
 
 [Week 5](wk-05-ML) \[5/3\]: Foundations for supervised learning (classification/regression): basic algorithms, overfitting, train and test sets, cross-validation, bias-variance tradeoff, regularization, ROC curve for binary classification (various R packages) 
 
 [Week 6](wk-06-ML) \[5/10\]: Tools for supervised learning 1 (GLM, Lasso, random forest, gradient boosted machines) (R packages, Vowpal Wabbit, xgboost, H2O)
 
-[Week 7](wk-07-bigdata) \[5/17\]: Analytical databases (columnar/MPP relational databases), SQL. NoSQL databases (key-value stores, document databases). “Big data” technologies (Hadoop, HDFS, Map-reduce, Hive, Impala, Spark, EMR etc.) 
+[Week 7](wk-07-db-bigdata) \[5/17\]: Analytical databases (columnar/MPP relational databases), SQL. NoSQL databases (key-value stores, document databases). “Big data” technologies (Hadoop, HDFS, Map-reduce, Hive, Impala, Spark, EMR etc.) 
 
 [Week 8](wk-08-ML) \[5/24\]: Tools for supervised learning 2 (support vector machines, neural networks, deep learning, ensembles) (R packages, H2O, libraries for deep learning on GPUs) 
 
