@@ -56,6 +56,9 @@ Therefore, it is important to restate here that good statistical and theoretical
 [Eduardo Ariño de la Rubia](https://www.linkedin.com/in/earino) <br>
 [Yasmin Lucero](https://www.linkedin.com/in/yasminlucero)
 
+TA: <br>
+[Medha Uppala](http://directory.stat.ucla.edu/medha-uppala)
+
 
 ### Announcements and Q&A:
 
