@@ -36,5 +36,4 @@ table(ifelse(yhat>0,1,0), d_test$spam)
 yhat <- predict(md, d_test, n.trees = gbm.perf(md, plot.it = FALSE)) 
 table(ifelse(yhat>0,1,0), d_test$spam)
 
-# more tweaking of params see later
 
