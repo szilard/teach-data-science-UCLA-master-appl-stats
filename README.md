@@ -87,7 +87,7 @@ David Donoho: [50 years of Data Science](https://dl.dropboxusercontent.com/u/234
 
 Sean Kandel, Andreas Paepcke, Joseph M. Hellerstein, and Jeffrey Heer: [Enterprise Data Analysis and Visualization: An Interview Study](http://db.cs.berkeley.edu/papers/vast12-interview.pdf) 
 
-Rexer Analytics: [2013 Data Miner Survey](http://www.rexeranalytics.com/Data-Miner-Survey-Results-2013.html) (Summary Report) 
+Rexer Analytics: [2015 Data Science Survey](http://www.rexeranalytics.com/assets/rexer_analytics_2015_data_miner_survey_summary_report.pdf) (Summary Report) 
 
 Leo Breiman: [Statistical Modeling: The Two Cultures](https://projecteuclid.org/download/pdf_1/euclid.ss/1009213726)
 
