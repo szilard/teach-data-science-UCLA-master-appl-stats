@@ -14,7 +14,7 @@ Slides [here](https://drive.google.com/open?id=1wyP4X99opP8xAKR0WbzFWulEJjeGhmI0
 
 #### Code
 
-R code in the `code[1-3]` subdirs.
+R code in the `code[1-3]` subdirs above.
 
 
 #### Supplemental reading
