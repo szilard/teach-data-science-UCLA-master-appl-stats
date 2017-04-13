@@ -17,7 +17,7 @@ Slides [here](https://drive.google.com/open?id=1D79Dq31KSk_UTy7IJnZx3YcxBkA1PPeP
 ...
 
 
-#### Supplemental reading
+#### Reading
 
 Rich Caruana, Alexandru Niculescu-Mizil: [An Empirical Comparison of Supervised Learning Algorithms](https://www.cs.cornell.edu/~caruana/ctp/ct.papers/caruana.icml06.pdf)
 
