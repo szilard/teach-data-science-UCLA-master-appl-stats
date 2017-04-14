@@ -24,9 +24,7 @@ system.time({
 ## stats:glm very slow!!!
 
 
-system.time({
-  phat <- predict(md, newx = X_test, type = "response")
-})
+phat <- predict(md, newx = X_test, type = "response")
 
 rocr_pred <- prediction(phat, d_test$dep_delayed_15min)
 performance(rocr_pred, "auc")@y.values[[1]]

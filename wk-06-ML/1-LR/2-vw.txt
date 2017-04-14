@@ -38,7 +38,7 @@ rm tmpvw*
 
 cut -d" " -f1 test.vw >  test.target
 
-vw -d train.vw -c -f vw.model --loss_function logistic --passes 10
+time vw -d train.vw -c -f vw.model --loss_function logistic --passes 10
 
 vw -t test.vw -i vw.model -p test.pred
 
