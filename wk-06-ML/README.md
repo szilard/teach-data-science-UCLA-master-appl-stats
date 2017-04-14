@@ -12,9 +12,9 @@ Tools for supervised learning 1 (GLM, Lasso, random forest, gradient boosted mac
 Slides [here](https://drive.google.com/open?id=1D79Dq31KSk_UTy7IJnZx3YcxBkA1PPePaFfJoyPf0tM).
 
 
-#### Code
+#### Code & Data
 
-...
+R code and data in the subdirs above.
 
 
 #### Reading
