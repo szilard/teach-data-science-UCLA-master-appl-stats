@@ -69,7 +69,7 @@ Class announcements and student Q&A will be done via
 ### Grading:
 
 Class Participation 10% <br>
-Homework (4 assignments) 60% <br>
+Homework ([4 assignments](z_assessment)) 60% <br>
 Final Exam 30%
 
 Sample exam questions [here](z_assessment/sample_exam_questions.md)
@@ -85,9 +85,11 @@ Sample exam questions [here](z_assessment/sample_exam_questions.md)
 
 David Donoho: [50 years of Data Science](https://dl.dropboxusercontent.com/u/23421017/50YearsDataScience.pdf)
 
-Sean Kandel, Andreas Paepcke, Joseph M. Hellerstein, and Jeffrey Heer: [Enterprise Data Analysis and Visualization: An Interview Study](http://db.cs.berkeley.edu/papers/vast12-interview.pdf) 
+Sean Kandel, Andreas Paepcke, Joseph M. Hellerstein, and Jeffrey Heer: [Enterprise Data Analysis and Visualization: An Interview Study](http://db.cs.berkeley.edu/papers/vast12-interview.pdf)
 
-Rexer Analytics: [2015 Data Science Survey](http://www.rexeranalytics.com/assets/rexer_analytics_2015_data_miner_survey_summary_report.pdf) (Summary Report) 
+
+Rexer Analytics: [2015 Data Science Survey](http://www.rexeranalytics.com/assets/rexer_analytics_2015_data_miner_survey_summary_report.pdf) (Summary Report)
+
 
 Leo Breiman: [Statistical Modeling: The Two Cultures](https://projecteuclid.org/download/pdf_1/euclid.ss/1009213726)
 
@@ -96,21 +98,27 @@ Rich Caruana, Alexandru Niculescu-Mizil: [An Empirical Comparison of Supervised 
 
 #### Books:
 
-John M. Chambers: Software for Data Analysis: Programming with R, Springer, 2008 
+John M. Chambers: Software for Data Analysis: Programming with R, Springer, 2008
 
-Hadley Wickham: Advanced R, Chapman & Hall/CRC, 2015 
+
+Hadley Wickham: Advanced R, Chapman & Hall/CRC, 2015
+
 
 W.N. Venables, B.D. Ripley, Modern Applied Statistics with S, Springer, 4th ed., 2003 
 
-William S. Cleveland, The Elements of Graphing Data, Hobart Press, 1994 
+William S. Cleveland, The Elements of Graphing Data, Hobart Press, 1994
 
-William S. Cleveland, Visualizing Data, Hobart Press, 1993 
 
-Edward R. Tufte, The Visual Display of Quantitative Information, Graphics Press, 2nd ed., 2001 
+William S. Cleveland, Visualizing Data, Hobart Press, 1993
+
+
+Edward R. Tufte, The Visual Display of Quantitative Information, Graphics Press, 2nd ed., 2001
+
 
 Stephen Few, Show Me the Numbers: Designing Tables and Graphs to Enlighten, 2nd ed., Analytics Press, 2012 
 
-Hadley Wickham, ggplot2: Elegant Graphics for Data Analysis, Springer, 2009 
+Hadley Wickham, ggplot2: Elegant Graphics for Data Analysis, Springer, 2009
+
 
 Dorian Pyle: Data Preparation for Data Mining, Morgan Kaufmann, 1999 
 
