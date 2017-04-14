@@ -1,0 +1,54 @@
+
+### install VW
+
+https://github.com/JohnLangford/vowpal_wabbit
+
+
+### install AUC calculator
+
+http://osmot.cs.cornell.edu/kddcup/software.html
+
+
+
+
+### convert csv to vw (numeric and categorical variables) and split train/test
+
+cat airline100K.csv | tail -n +2 | sed 's/"//g' > tmpvw1
+
+cut -d, -f9 tmpvw1 | sed 's/N/-1 |/' | sed 's/Y/+1 |/' > tmpvw2a
+cut -d, -f1 tmpvw1 | sed 's/^/Month_/' > tmpvw2b1
+cut -d, -f2 tmpvw1 | sed 's/^/DayofMonth_/' > tmpvw2b2
+cut -d, -f3 tmpvw1 | sed 's/^/DayOfWeek_/' > tmpvw2b3
+cut -d, -f4 tmpvw1 | sed 's/^/DepTime:/' > tmpvw2b4
+cut -d, -f5 tmpvw1 | sed 's/^/UniqueCarrier_/' > tmpvw2b5
+cut -d, -f6 tmpvw1 | sed 's/^/Origin_/' > tmpvw2b6
+cut -d, -f7 tmpvw1 | sed 's/^/Dest_/' > tmpvw2b7
+cut -d, -f8 tmpvw1 | sed 's/^/Distance:/' > tmpvw2b8
+
+paste -d" " tmpvw2a tmpvw2b[1-8] > tmpvw3
+shuf tmpvw3 > tmpvw4
+head -n 60000 tmpvw4 > train.vw
+tail -n 40000 tmpvw4 > test.vw
+rm tmpvw*
+
+
+
+
+### run VW
+
+cut -d" " -f1 test.vw >  test.target
+
+vw -d train.vw -c -f vw.model --loss_function logistic --passes 10
+
+vw -t test.vw -i vw.model -p test.pred
+
+~/bin/perf.src/perf -ROC -files  test.target  test.pred 
+
+
+
+
+### cleanup
+
+rm *cache *model *pred *target
+
+
