@@ -17,7 +17,7 @@ Xnames <- names(dx_train)[which(names(dx_train)!="dep_delayed_15min")]
 system.time({
   md <- h2o.gbm(x = Xnames, y = "dep_delayed_15min", training_frame = dx_train, distribution = "bernoulli", 
                 validation_frame = dx_valid,
-                ntrees = 100000, stopping_rounds = 5, stopping_metric = "AUC", stopping_tolerance = 1e-3, 
+                ntrees = 10000, stopping_rounds = 5, stopping_metric = "AUC", stopping_tolerance = 1e-3, 
                 max_depth = 20, learn_rate = 0.1, nbins = 100, 
                 seed = 123)    
 })
