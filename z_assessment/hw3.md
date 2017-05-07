@@ -4,7 +4,7 @@
 
 #### Due: 
 
-Tuesday noon (Pacific time) on Week 8 (5/23)
+Wednesday noon (Pacific time) on Week 8 (5/24)
 
 Late submissions will be penalized and the penalty will grow with time.
 
