@@ -24,7 +24,8 @@ system.time({
   md <- xgboost(data = X_train, label = ifelse(d_train$dep_delayed_15min=='Y',1,0),
                 nthread = n_proc, nround = 1, max_depth = 20,
                 num_parallel_tree = 500, subsample = 0.632,
-                colsample_bytree = 1/sqrt(length(X_train@x)/nrow(X_train)))
+                colsample_bytree = 1/sqrt(length(X_train@x)/nrow(X_train)),
+                save_period = NULL)
 })
 
 
