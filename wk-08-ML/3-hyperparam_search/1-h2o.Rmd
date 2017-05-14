@@ -1,4 +1,6 @@
 
+```{r}
+
 library(h2o)
 
 h2o.init(nthreads=-1)
@@ -51,4 +53,8 @@ md_best@model$scoring_history
 md_best@model$model_summary$number_of_trees
 
 h2o.auc(h2o.performance(md_best, dx_test))
+
+```
+
+
 
