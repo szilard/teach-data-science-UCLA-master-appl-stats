@@ -16,7 +16,7 @@ Xnames <- names(dx_train)[which(names(dx_train)!="dep_delayed_15min")]
 
 
 hyper_params <- list( ntrees = 10000,  ## early stopping
-                     max_depth = 10:25, 
+                     max_depth = 5:15, 
                      min_rows = c(1,3,10,30,100),
                      learn_rate = c(0.01,0.03,0.1),  
                      learn_rate_annealing = c(0.99,0.995,1,1),
@@ -24,12 +24,12 @@ hyper_params <- list( ntrees = 10000,  ## early stopping
                      col_sample_rate = c(0.7,1,1),
                      nbins = c(30,100,300),
                      nbins_cats = c(64,256,1024),
-                     min_split_improvement = c(0,1e-8,1e-6,1e-4),
+                     min_split_improvemenst = c(0,1e-8,1e-6,1e-4),
                      histogram_type = c("UniformAdaptive","QuantilesGlobal","RoundRobin")
 )
 
 search_criteria <- list( strategy = "RandomDiscrete",
-                        max_runtime_secs = 18*3600,
+                        max_runtime_secs = 10*3600,
                         max_models = 100
 )
 
@@ -39,8 +39,7 @@ system.time({
                   validation_frame = dx_valid,
                   hyper_params = hyper_params,
                   search_criteria = search_criteria,
-                  score_tree_interval = 10, stopping_metric = "AUC",
-                  stopping_tolerance = 1e-4, stopping_rounds = 3,
+                  stopping_metric = "AUC", stopping_tolerance = 1e-3, stopping_rounds = 2,
                   seed = 123)
 })
 
