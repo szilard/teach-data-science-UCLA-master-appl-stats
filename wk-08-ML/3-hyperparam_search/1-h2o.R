@@ -1,0 +1,57 @@
+
+library(h2o)
+
+h2o.init(nthreads=-1)
+
+
+dx <- h2o.importFile("wk-06-ML/data/airline100K.csv")
+
+dx_split <- h2o.splitFrame(dx, ratios = c(0.6,0.2), seed = 123)
+dx_train <- dx_split[[1]]
+dx_valid <- dx_split[[2]]
+dx_test <- dx_split[[3]]
+
+
+Xnames <- names(dx_train)[which(names(dx_train)!="dep_delayed_15min")]
+
+
+hyper_params <- list( ntrees = 10000,  ## early stopping
+                     max_depth = 10:25, 
+                     min_rows = c(1,3,10,30,100),
+                     learn_rate = c(0.01,0.03,0.1),  
+                     learn_rate_annealing = c(0.99,0.995,1,1),
+                     sample_rate = c(0.4,0.7,1,1),
+                     col_sample_rate = c(0.7,1,1),
+                     nbins = c(30,100,300),
+                     nbins_cats = c(64,256,1024),
+                     min_split_improvement = c(0,1e-8,1e-6,1e-4),
+                     histogram_type = c("UniformAdaptive","QuantilesGlobal","RoundRobin")
+)
+
+search_criteria <- list( strategy = "RandomDiscrete",
+                        max_runtime_secs = 18*3600,
+                        max_models = 100
+)
+
+system.time({
+  mds <- h2o.grid(algorithm = "gbm", grid_id = "grd",
+                  x = Xnames, y = "dep_delayed_15min", training_frame = dx_train,
+                  validation_frame = dx_valid,
+                  hyper_params = hyper_params,
+                  search_criteria = search_criteria,
+                  score_tree_interval = 10, stopping_metric = "AUC",
+                  stopping_tolerance = 1e-4, stopping_rounds = 3,
+                  seed = 123)
+})
+
+
+
+mds_sort <- h2o.getGrid(grid_id = "grd", sort_by = "auc", decreasing = TRUE)
+md_best <- h2o.getModel(mds_sort@model_ids[[1]])
+summary(md_best)
+
+md_best@model$scoring_history
+md_best@model$model_summary$number_of_trees
+
+h2o.auc(h2o.performance(md_best, dx_test))
+
