@@ -23,9 +23,7 @@ hyper_params <- list( ntrees = 10000,  ## early stopping
                      sample_rate = c(0.4,0.7,1,1),
                      col_sample_rate = c(0.7,1,1),
                      nbins = c(30,100,300),
-                     nbins_cats = c(64,256,1024),
-                     min_split_improvemenst = c(0,1e-8,1e-6,1e-4),
-                     histogram_type = c("UniformAdaptive","QuantilesGlobal","RoundRobin")
+                     nbins_cats = c(64,256,1024)
 )
 
 search_criteria <- list( strategy = "RandomDiscrete",
