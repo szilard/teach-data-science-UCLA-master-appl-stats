@@ -46,6 +46,8 @@ system.time({
 
 
 mds_sort <- h2o.getGrid(grid_id = "grd", sort_by = "auc", decreasing = TRUE)
+mds_sort
+
 md_best <- h2o.getModel(mds_sort@model_ids[[1]])
 summary(md_best)
 
