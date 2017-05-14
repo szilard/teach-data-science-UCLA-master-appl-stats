@@ -49,9 +49,6 @@ mds_sort <- h2o.getGrid(grid_id = "grd", sort_by = "auc", decreasing = TRUE)
 md_best <- h2o.getModel(mds_sort@model_ids[[1]])
 summary(md_best)
 
-md_best@model$scoring_history
-md_best@model$model_summary$number_of_trees
-
 h2o.auc(h2o.performance(md_best, dx_test))
 
 ```
