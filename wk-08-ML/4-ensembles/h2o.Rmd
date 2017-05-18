@@ -1,0 +1,66 @@
+
+```{r}
+
+library(h2o)
+
+h2o.init(nthreads=-1)
+
+
+dx <- h2o.importFile("wk-06-ML/data/airline100K.csv")
+
+dx_split <- h2o.splitFrame(dx, ratios = 0.7, seed = 123)
+dx_train <- dx_split[[1]]
+dx_test <- dx_split[[2]]
+
+
+Xnames <- setdiff(names(dx_train),"dep_delayed_15min")
+
+
+
+system.time({
+  md1 <- h2o.glm(x = Xnames, y = "dep_delayed_15min", training_frame = dx_train, 
+                family = "binomial", 
+                alpha = 1, lambda = 0,
+                seed = 123,
+                nfolds = 5, fold_assignment = "Modulo", keep_cross_validation_predictions = TRUE)
+})
+
+system.time({
+  md2 <- h2o.randomForest(x = Xnames, y = "dep_delayed_15min", training_frame = dx_train, 
+                ntrees = 500,
+                seed = 123,
+                nfolds = 5, fold_assignment = "Modulo", keep_cross_validation_predictions = TRUE)
+})
+
+
+system.time({
+  md3 <- h2o.gbm(x = Xnames, y = "dep_delayed_15min", training_frame = dx_train, distribution = "bernoulli", 
+                ntrees = 300, max_depth = 20, learn_rate = 0.1, 
+                nbins = 100, seed = 123,
+                nfolds = 5, fold_assignment = "Modulo", keep_cross_validation_predictions = TRUE)    
+})
+
+system.time({
+  md4 <- h2o.deeplearning(x = Xnames, y = "dep_delayed_15min", training_frame = dx_train, 
+            epochs = 5,
+            seed = 123,
+            nfolds = 5, fold_assignment = "Modulo", keep_cross_validation_predictions = TRUE) 
+})
+
+
+
+md_ens <- h2o.stackedEnsemble(x = Xnames, y = "dep_delayed_15min", training_frame = dx_train, 
+                    base_models = list(md1@model_id, md2@model_id, md3@model_id, md4@model_id,))
+
+
+h2o.auc(h2o.performance(md1, dx_test))
+h2o.auc(h2o.performance(md2, dx_test))
+h2o.auc(h2o.performance(md3, dx_test))
+h2o.auc(h2o.performance(md4, dx_test))
+h2o.auc(h2o.performance(md_ens, dx_test))
+
+
+```
+
+
+
