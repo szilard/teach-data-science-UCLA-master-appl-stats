@@ -35,7 +35,7 @@ Therefore, it is important to restate here that good statistical and theoretical
 
 [Week 3](wk-03-repro) \[4/19\]: Tools for reproducible research/productive data analysis and collaboration (Rmarkdown, Jupyter notebooks, git/Github). 
 
-[Week 4](wk-04-datavis-shiny) \[4/26\]: Tools for data visualization: ggplot2, ggraph, shiny (interactive web applications with R) / shiny dashboards 
+[Week 4](wk-04-datavis-shiny) \[4/26\]: Tools for data visualization: ggplot2, shiny (interactive web applications with R) / shiny dashboards 
 
 [Week 5](wk-05-ML) \[5/3\]: Foundations for supervised learning (classification/regression): basic algorithms, overfitting, train and test sets, cross-validation, bias-variance tradeoff, regularization, ROC curve for binary classification (various R packages) 
 
