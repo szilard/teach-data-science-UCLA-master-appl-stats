@@ -27,7 +27,7 @@ system.time({
 
 system.time({
   md2 <- h2o.randomForest(x = Xnames, y = "dep_delayed_15min", training_frame = dx_train, 
-                ntrees = 500,
+                ntrees = 300,
                 seed = 123,
                 nfolds = 5, fold_assignment = "Modulo", keep_cross_validation_predictions = TRUE)
 })
@@ -35,7 +35,7 @@ system.time({
 
 system.time({
   md3 <- h2o.gbm(x = Xnames, y = "dep_delayed_15min", training_frame = dx_train, distribution = "bernoulli", 
-                ntrees = 300, max_depth = 20, learn_rate = 0.1, 
+                ntrees = 200, max_depth = 10, learn_rate = 0.1, 
                 nbins = 100, seed = 123,
                 nfolds = 5, fold_assignment = "Modulo", keep_cross_validation_predictions = TRUE)    
 })
@@ -50,7 +50,7 @@ system.time({
 
 
 md_ens <- h2o.stackedEnsemble(x = Xnames, y = "dep_delayed_15min", training_frame = dx_train, 
-                    base_models = list(md1@model_id, md2@model_id, md3@model_id, md4@model_id,))
+                    base_models = list(md1@model_id, md2@model_id, md3@model_id, md4@model_id))
 
 
 h2o.auc(h2o.performance(md1, dx_test))
@@ -59,6 +59,8 @@ h2o.auc(h2o.performance(md3, dx_test))
 h2o.auc(h2o.performance(md4, dx_test))
 h2o.auc(h2o.performance(md_ens, dx_test))
 
+
+h2o.getModel(md_ens@model$metalearner$name)@model$coefficients_table
 
 ```
 
