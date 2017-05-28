@@ -1,0 +1,7 @@
+
+
+sudo pip install gpustat
+
+while true; do gpustat --no-color -c; sleep 1; done
+
+
