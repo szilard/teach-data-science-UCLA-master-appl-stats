@@ -1,0 +1,260 @@
+
+
+***   p2.xlarge   ***
+
+
+Rscript 2-mxnet.R
+
+Loading required package: methods
+Parsed with column specification:
+cols(
+  .default = col_integer()
+)
+See spec(...) for full column specifications.
+Parsed with column specification:
+cols(
+  .default = col_integer()
+)
+See spec(...) for full column specifications.
+Parsed with column specification:
+cols(
+  X1 = col_integer()
+)
+Parsed with column specification:
+cols(
+  X1 = col_integer()
+)
+Start training with 1 devices
+[1] Train-accuracy=0.92259281517094
+[2] Train-accuracy=0.974496934968017
+[3] Train-accuracy=0.982026252665245
+[4] Train-accuracy=0.985774253731343
+[5] Train-accuracy=0.98798973880597
+[6] Train-accuracy=0.989622201492537
+[7] Train-accuracy=0.990555037313433
+[8] Train-accuracy=0.991021455223881
+[9] Train-accuracy=0.993286913646055
+[10] Train-accuracy=0.99252065565032
+   user  system elapsed 
+ 73.835  21.383  50.519 
+Error rate: 1.06 %
+terminate called without an active exception
+Aborted (core dumped)
+
+
+nvidia-smi -l 3
+
++------------------------------------------------------+
+| NVIDIA-SMI 352.99     Driver Version: 352.99         |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla K80           Off  | 0000:00:1E.0     Off |                    0 |
+| N/A   82C    P0   136W / 149W |   2008MiB / 11519MiB |     91%      Default |
++-------------------------------+----------------------+----------------------+
+
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID  Type  Process name                               Usage      |
+|=============================================================================|
+|    0       991    C   /usr/bin/python                                 64MiB |
+|    0      6949    C   /usr/lib/R/bin/exec/R                         1885MiB |
++-----------------------------------------------------------------------------+
+
+
+
+mpstat -P ALL 3
+
+4:16:54 AM  CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+04:16:57 AM  all   33.90    0.00    9.76    0.00    0.00    0.00    0.18    0.00    0.00   56.17
+04:16:57 AM    0   56.36    0.00   17.09    0.00    0.00    0.00    0.00    0.00    0.00   26.55
+04:16:57 AM    1   12.67    0.00    2.05    0.00    0.00    0.00    0.34    0.00    0.00   84.93
+04:16:57 AM    2   53.79    0.00   19.49    0.00    0.00    0.00    0.36    0.00    0.00   26.35
+04:16:57 AM    3   14.79    0.00    1.06    0.00    0.00    0.00    0.00    0.00    0.00   84.15
+
+
+
+***   p2.8xlarge   ***
+
+@@@ TODO: re-run after fixing USE_CUDNN
+
+
+Rscript 2-mxnet.R    ## edit file with  `n_gpu <- 8` 
+
+Loading required package: methods
+libdc1394 error: Failed to initialize libdc1394
+Parsed with column specification:
+cols(
+  .default = col_integer()
+)
+See spec(...) for full column specifications.
+Parsed with column specification:
+cols(
+  .default = col_integer()
+)
+See spec(...) for full column specifications.
+Parsed with column specification:
+cols(
+  X1 = col_integer()
+)
+Parsed with column specification:
+cols(
+  X1 = col_integer()
+)
+Auto-select kvstore type = local_update_cpu
+Start training with 8 devices
+[1] Train-accuracy=0.923661191239316
+[2] Train-accuracy=0.9761460554371
+[3] Train-accuracy=0.980776918976546
+[4] Train-accuracy=0.98504131130064
+[5] Train-accuracy=0.987340085287846
+[6] Train-accuracy=0.988422841151386
+[7] Train-accuracy=0.990121934968017
+[8] Train-accuracy=0.991038113006397
+[9] Train-accuracy=0.991587819829424
+[10] Train-accuracy=0.992220815565032
+   user  system elapsed 
+366.527 694.918 608.374 
+Error rate: 0.93 %
+terminate called without an active exception
+Aborted (core dumped)
+
+
+
+nvidia-smi -l 3
+
++------------------------------------------------------+                       
+| NVIDIA-SMI 352.99     Driver Version: 352.99         |                       
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla K80           Off  | 0000:00:17.0     Off |                    0 |
+| N/A   60C    P0    58W / 149W |    250MiB / 11519MiB |      6%      Default |
++-------------------------------+----------------------+----------------------+
+|   1  Tesla K80           Off  | 0000:00:18.0     Off |                    0 |
+| N/A   39C    P0    72W / 149W |    184MiB / 11519MiB |      7%      Default |
++-------------------------------+----------------------+----------------------+
+|   2  Tesla K80           Off  | 0000:00:19.0     Off |                    0 |
+| N/A   49C    P0    59W / 149W |    184MiB / 11519MiB |     11%      Default |
++-------------------------------+----------------------+----------------------+
+|   3  Tesla K80           Off  | 0000:00:1A.0     Off |                    0 |
+| N/A   43C    P0    72W / 149W |    184MiB / 11519MiB |      7%      Default |
++-------------------------------+----------------------+----------------------+
+|   4  Tesla K80           Off  | 0000:00:1B.0     Off |                    0 |
+| N/A   47C    P0    58W / 149W |    184MiB / 11519MiB |     11%      Default |
++-------------------------------+----------------------+----------------------+
+|   5  Tesla K80           Off  | 0000:00:1C.0     Off |                    0 |
+| N/A   41C    P0    73W / 149W |    184MiB / 11519MiB |     10%      Default |
++-------------------------------+----------------------+----------------------+
+|   6  Tesla K80           Off  | 0000:00:1D.0     Off |                    0 |
+| N/A   50C    P0    59W / 149W |    184MiB / 11519MiB |      7%      Default |
++-------------------------------+----------------------+----------------------+
+|   7  Tesla K80           Off  | 0000:00:1E.0     Off |                    0 |
+| N/A   44C    P0    69W / 149W |    184MiB / 11519MiB |      7%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID  Type  Process name                               Usage      |
+|=============================================================================|
+|    0      1461    C   /usr/bin/python                                 64MiB |
+|    0      3610    C   /usr/lib/R/bin/exec/R                          126MiB |
+|    1      3610    C   /usr/lib/R/bin/exec/R                          126MiB |
+|    2      3610    C   /usr/lib/R/bin/exec/R                          126MiB |
+|    3      3610    C   /usr/lib/R/bin/exec/R                          126MiB |
+|    4      3610    C   /usr/lib/R/bin/exec/R                          126MiB |
+|    5      3610    C   /usr/lib/R/bin/exec/R                          126MiB |
+|    6      3610    C   /usr/lib/R/bin/exec/R                          126MiB |
+|    7      3610    C   /usr/lib/R/bin/exec/R                          126MiB |
++-----------------------------------------------------------------------------+
+
++------------------------------------------------------+                       
+| NVIDIA-SMI 352.99     Driver Version: 352.99         |                       
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla K80           Off  | 0000:00:17.0     Off |                    0 |
+| N/A   61C    P0    59W / 149W |    250MiB / 11519MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   1  Tesla K80           Off  | 0000:00:18.0     Off |                    0 |
+| N/A   47C    P0    73W / 149W |    184MiB / 11519MiB |      3%      Default |
++-------------------------------+----------------------+----------------------+
+|   2  Tesla K80           Off  | 0000:00:19.0     Off |                    0 |
+| N/A   59C    P0    60W / 149W |    184MiB / 11519MiB |      3%      Default |
++-------------------------------+----------------------+----------------------+
+|   3  Tesla K80           Off  | 0000:00:1A.0     Off |                    0 |
+| N/A   51C    P0    71W / 149W |    184MiB / 11519MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   4  Tesla K80           Off  | 0000:00:1B.0     Off |                    0 |
+| N/A   57C    P0    58W / 149W |    184MiB / 11519MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   5  Tesla K80           Off  | 0000:00:1C.0     Off |                    0 |
+| N/A   49C    P0    74W / 149W |    184MiB / 11519MiB |      3%      Default |
++-------------------------------+----------------------+----------------------+
+|   6  Tesla K80           Off  | 0000:00:1D.0     Off |                    0 |
+| N/A   61C    P0    61W / 149W |    184MiB / 11519MiB |      6%      Default |
++-------------------------------+----------------------+----------------------+
+|   7  Tesla K80           Off  | 0000:00:1E.0     Off |                    0 |
+| N/A   52C    P0    70W / 149W |    184MiB / 11519MiB |      7%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID  Type  Process name                               Usage      |
+|=============================================================================|
+|    0      1461    C   /usr/bin/python                                 64MiB |
+|    0      3610    C   /usr/lib/R/bin/exec/R                          126MiB |
+|    1      3610    C   /usr/lib/R/bin/exec/R                          126MiB |
+|    2      3610    C   /usr/lib/R/bin/exec/R                          126MiB |
+|    3      3610    C   /usr/lib/R/bin/exec/R                          126MiB |
+|    4      3610    C   /usr/lib/R/bin/exec/R                          126MiB |
+|    5      3610    C   /usr/lib/R/bin/exec/R                          126MiB |
+|    6      3610    C   /usr/lib/R/bin/exec/R                          126MiB |
+|    7      3610    C   /usr/lib/R/bin/exec/R                          126MiB |
++-----------------------------------------------------------------------------+
+
+
+mpstat -P ALL 3
+
+Average:     CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+Average:     all    1.84    0.00    3.53    0.00    0.00    0.00    0.01    0.00    0.00   94.61
+Average:       0   12.22    0.00   54.73    0.00    0.00    0.12    0.00    0.00    0.00   32.93
+Average:       1    5.56    0.00   13.85    0.00    0.00    0.00    0.03    0.00    0.00   80.56
+Average:       2    2.62    0.00    7.62    0.00    0.00    0.00    0.00    0.00    0.00   89.76
+Average:       3    2.22    0.00    4.57    0.00    0.00    0.00    0.00    0.00    0.00   93.21
+Average:       4    1.46    0.00    1.95    0.00    0.00    0.00    0.03    0.00    0.00   96.55
+Average:       5    1.28    0.00    1.01    0.00    0.00    0.00    0.00    0.00    0.00   97.71
+Average:       6    1.52    0.00    1.19    0.00    0.00    0.00    0.00    0.00    0.00   97.29
+Average:       7    1.62    0.00    1.62    0.00    0.00    0.00    0.00    0.00    0.00   96.77
+Average:       8    1.31    0.00    1.09    0.00    0.00    0.00    0.03    0.00    0.00   97.57
+Average:       9    1.46    0.00    0.61    0.00    0.00    0.00    0.03    0.00    0.00   97.90
+Average:      10    1.25    0.00    1.13    0.00    0.00    0.00    0.03    0.00    0.00   97.60
+Average:      11    1.28    0.00    1.28    0.00    0.00    0.00    0.00    0.00    0.00   97.45
+Average:      12    1.34    0.00    0.85    0.00    0.00    0.00    0.00    0.00    0.00   97.81
+Average:      13    1.22    0.00    0.97    0.00    0.00    0.00    0.03    0.00    0.00   97.78
+Average:      14    1.43    0.00    0.91    0.00    0.00    0.00    0.03    0.00    0.00   97.63
+Average:      15    1.28    0.00    1.09    0.03    0.00    0.00    0.03    0.00    0.00   97.57
+Average:      16    1.67    0.00    4.38    0.00    0.00    0.00    0.03    0.00    0.00   93.92
+Average:      17    1.22    0.00    1.00    0.00    0.00    0.00    0.03    0.00    0.00   97.75
+Average:      18    1.19    0.00    0.76    0.00    0.00    0.00    0.03    0.00    0.00   98.02
+Average:      19    1.22    0.00    0.97    0.00    0.00    0.00    0.03    0.00    0.00   97.78
+Average:      20    1.09    0.00    1.00    0.00    0.00    0.00    0.00    0.00    0.00   97.90
+Average:      21    1.43    0.00    1.12    0.00    0.00    0.00    0.03    0.00    0.00   97.42
+Average:      22    1.34    0.00    0.91    0.00    0.00    0.00    0.00    0.00    0.00   97.75
+Average:      23    1.03    0.00    0.58    0.00    0.00    0.00    0.00    0.00    0.00   98.39
+Average:      24    1.10    0.00    0.91    0.00    0.00    0.00    0.00    0.00    0.00   97.99
+Average:      25    1.25    0.00    1.03    0.00    0.00    0.00    0.03    0.00    0.00   97.69
+Average:      26    1.28    0.00    1.06    0.00    0.00    0.00    0.03    0.00    0.00   97.63
+Average:      27    1.06    0.00    1.13    0.00    0.00    0.00    0.00    0.00    0.00   97.81
+Average:      28    1.37    0.00    1.16    0.00    0.00    0.00    0.03    0.00    0.00   97.45
+Average:      29    1.09    0.00    0.79    0.00    0.00    0.00    0.00    0.00    0.00   98.11
+Average:      30    1.46    0.00    1.00    0.00    0.00    0.00    0.00    0.00    0.00   97.54
+Average:      31    1.16    0.00    1.00    0.00    0.00    0.00    0.00    0.00    0.00   97.84
+
+
+
+
+

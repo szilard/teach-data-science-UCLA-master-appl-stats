@@ -1,0 +1,573 @@
+
+
+***   p2.xlarge   ***
+
+
+python 1-keras.py
+
+Using TensorFlow backend.
+I tensorflow/stream_executor/dso_loader.cc:111] successfully opened CUDA library libcublas.so locally
+I tensorflow/stream_executor/dso_loader.cc:111] successfully opened CUDA library libcudnn.so locally
+I tensorflow/stream_executor/dso_loader.cc:111] successfully opened CUDA library libcufft.so locally
+I tensorflow/stream_executor/dso_loader.cc:111] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:111] successfully opened CUDA library libcurand.so locally
+I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:925] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:951] Found device 0 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:00:1e.0
+Total memory: 11.25GiB
+Free memory: 11.07GiB
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:972] DMA: 0 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] 0:   Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K80, pci bus id: 0000:00:1e.0)
+Epoch 1/10
+60000/60000 [==============================] - 4s - loss: 0.3226 - acc: 0.8983       
+Epoch 2/10
+60000/60000 [==============================] - 3s - loss: 0.0768 - acc: 0.9762     
+Epoch 3/10
+60000/60000 [==============================] - 3s - loss: 0.0619 - acc: 0.9808     
+Epoch 4/10
+60000/60000 [==============================] - 3s - loss: 0.0510 - acc: 0.9835     
+Epoch 5/10
+60000/60000 [==============================] - 3s - loss: 0.0430 - acc: 0.9867     
+Epoch 6/10
+60000/60000 [==============================] - 3s - loss: 0.0383 - acc: 0.9874     
+Epoch 7/10
+60000/60000 [==============================] - 3s - loss: 0.0361 - acc: 0.9881     
+Epoch 8/10
+60000/60000 [==============================] - 3s - loss: 0.0328 - acc: 0.9892     
+Epoch 9/10
+60000/60000 [==============================] - 3s - loss: 0.0301 - acc: 0.9901     
+Epoch 10/10
+60000/60000 [==============================] - 3s - loss: 0.0290 - acc: 0.9911     
+Train time: 36.8663649559 sec
+Error rate: 0.89 %
+
+
+nvidia-smi -l 3
+
++------------------------------------------------------+                       
+| NVIDIA-SMI 352.99     Driver Version: 352.99         |                       
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla K80           Off  | 0000:00:1E.0     Off |                    0 |
+| N/A   82C    P0   107W / 149W |  11021MiB / 11519MiB |     66%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID  Type  Process name                               Usage      |
+|=============================================================================|
+|    0      1272    C   /usr/bin/python                                 64MiB |
+|    0     12008    C   python                                       10898MiB |
++-----------------------------------------------------------------------------+
+
+
+mpstat -P ALL 3
+
+10:37:42 PM  CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+10:37:45 PM  all   18.52    0.00    3.46    0.00    0.00    0.09    0.47    0.00    0.00   77.46
+10:37:45 PM    0   17.87    0.00    2.66    0.00    0.00    0.00    0.76    0.00    0.00   78.71
+10:37:45 PM    1   16.48    0.00    3.75    0.00    0.00    0.00    0.37    0.00    0.00   79.40
+10:37:45 PM    2   19.70    0.00    3.35    0.00    0.00    0.00    0.37    0.00    0.00   76.58
+10:37:45 PM    3   19.93    0.00    4.06    0.00    0.00    0.00    0.37    0.00    0.00   75.65
+
+
+
+
+***   p2.8xlarge   ***
+
+
+python 1-keras.py
+
+Using TensorFlow backend.
+I tensorflow/stream_executor/dso_loader.cc:111] successfully opened CUDA library libcublas.so locally
+I tensorflow/stream_executor/dso_loader.cc:111] successfully opened CUDA library libcudnn.so locally
+I tensorflow/stream_executor/dso_loader.cc:111] successfully opened CUDA library libcufft.so locally
+I tensorflow/stream_executor/dso_loader.cc:111] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:111] successfully opened CUDA library libcurand.so locally
+I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:925] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:951] Found device 0 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:00:17.0
+Total memory: 11.25GiB
+Free memory: 11.07GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x4367be0
+I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:925] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:951] Found device 1 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:00:18.0
+Total memory: 11.25GiB
+Free memory: 11.13GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x4777d60
+I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:925] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:951] Found device 2 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:00:19.0
+Total memory: 11.25GiB
+Free memory: 11.13GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x4b87830
+I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:925] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:951] Found device 3 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:00:1a.0
+Total memory: 11.25GiB
+Free memory: 11.13GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x4f9aeb0
+I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:925] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:951] Found device 4 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:00:1b.0
+Total memory: 11.25GiB
+Free memory: 11.13GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x53b1f80
+I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:925] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:951] Found device 5 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:00:1c.0
+Total memory: 11.25GiB
+Free memory: 11.13GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x57cca10
+I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:925] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:951] Found device 6 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:00:1d.0
+Total memory: 11.25GiB
+Free memory: 11.13GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:572] creating context when one is currently active; existing: 0x5beb410
+I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:925] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:951] Found device 7 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:00:1e.0
+Total memory: 11.25GiB
+Free memory: 11.13GiB
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:972] DMA: 0 1 2 3 4 5 6 7 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] 0:   Y Y Y Y Y Y Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] 1:   Y Y Y Y Y Y Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] 2:   Y Y Y Y Y Y Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] 3:   Y Y Y Y Y Y Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] 4:   Y Y Y Y Y Y Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] 5:   Y Y Y Y Y Y Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] 6:   Y Y Y Y Y Y Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] 7:   Y Y Y Y Y Y Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K80, pci bus id: 0000:00:17.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Creating TensorFlow device (/gpu:1) -> (device: 1, name: Tesla K80, pci bus id: 0000:00:18.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Creating TensorFlow device (/gpu:2) -> (device: 2, name: Tesla K80, pci bus id: 0000:00:19.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Creating TensorFlow device (/gpu:3) -> (device: 3, name: Tesla K80, pci bus id: 0000:00:1a.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Creating TensorFlow device (/gpu:4) -> (device: 4, name: Tesla K80, pci bus id: 0000:00:1b.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Creating TensorFlow device (/gpu:5) -> (device: 5, name: Tesla K80, pci bus id: 0000:00:1c.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Creating TensorFlow device (/gpu:6) -> (device: 6, name: Tesla K80, pci bus id: 0000:00:1d.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Creating TensorFlow device (/gpu:7) -> (device: 7, name: Tesla K80, pci bus id: 0000:00:1e.0)
+Epoch 1/10
+60000/60000 [==============================] - 4s - loss: 0.3239 - acc: 0.8981       
+Epoch 2/10
+60000/60000 [==============================] - 3s - loss: 0.0768 - acc: 0.9761     
+Epoch 3/10
+60000/60000 [==============================] - 3s - loss: 0.0619 - acc: 0.9804     
+Epoch 4/10
+60000/60000 [==============================] - 3s - loss: 0.0493 - acc: 0.9842     
+Epoch 5/10
+60000/60000 [==============================] - 3s - loss: 0.0426 - acc: 0.9866     
+Epoch 6/10
+60000/60000 [==============================] - 3s - loss: 0.0399 - acc: 0.9872     
+Epoch 7/10
+60000/60000 [==============================] - 3s - loss: 0.0357 - acc: 0.9883     
+Epoch 8/10
+60000/60000 [==============================] - 3s - loss: 0.0332 - acc: 0.9889     
+Epoch 9/10
+60000/60000 [==============================] - 3s - loss: 0.0292 - acc: 0.9904     
+Epoch 10/10
+60000/60000 [==============================] - 3s - loss: 0.0274 - acc: 0.9913      
+Train time: 35.8703432083 sec
+Error rate: 0.78 %
+
+
+nvidia-smi -l 3
+
++------------------------------------------------------+                       
+| NVIDIA-SMI 352.99     Driver Version: 352.99         |                       
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla K80           Off  | 0000:00:17.0     Off |                    0 |
+| N/A   70C    P0    99W / 149W |  11026MiB / 11519MiB |     67%      Default |
++-------------------------------+----------------------+----------------------+
+|   1  Tesla K80           Off  | 0000:00:18.0     Off |                    0 |
+| N/A   43C    P0    70W / 149W |  10954MiB / 11519MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   2  Tesla K80           Off  | 0000:00:19.0     Off |                    0 |
+| N/A   59C    P0    59W / 149W |  10953MiB / 11519MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   3  Tesla K80           Off  | 0000:00:1A.0     Off |                    0 |
+| N/A   47C    P0    69W / 149W |  10953MiB / 11519MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   4  Tesla K80           Off  | 0000:00:1B.0     Off |                    0 |
+| N/A   57C    P0    56W / 149W |  10952MiB / 11519MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   5  Tesla K80           Off  | 0000:00:1C.0     Off |                    0 |
+| N/A   45C    P0    70W / 149W |  10951MiB / 11519MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   6  Tesla K80           Off  | 0000:00:1D.0     Off |                    0 |
+| N/A   60C    P0    57W / 149W |  10951MiB / 11519MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   7  Tesla K80           Off  | 0000:00:1E.0     Off |                    0 |
+| N/A   47C    P0    70W / 149W |  10950MiB / 11519MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID  Type  Process name                               Usage      |
+|=============================================================================|
+|    0      1484    C   /usr/bin/python                                 64MiB |
+|    0      2770    C   python                                       10897MiB |
+|    1      2770    C   python                                       10891MiB |
+|    2      2770    C   python                                       10890MiB |
+|    3      2770    C   python                                       10890MiB |
+|    4      2770    C   python                                       10889MiB |
+|    5      2770    C   python                                       10888MiB |
+|    6      2770    C   python                                       10888MiB |
+|    7      2770    C   python                                       10887MiB |
++-----------------------------------------------------------------------------+
+
+
+mpstat -P ALL 3
+
+Average:     CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+Average:     all    2.10    0.00    0.37    0.00    0.00    0.00    0.08    0.00    0.00   97.46
+Average:       0    3.48    0.00    0.35    0.00    0.00    0.00    0.17    0.00    0.00   95.99
+Average:       1    4.48    0.00    0.34    0.00    0.00    0.00    0.17    0.00    0.00   95.00
+Average:       2    4.13    0.00    0.86    0.00    0.00    0.00    0.17    0.00    0.00   94.84
+Average:       3    3.44    0.00    0.69    0.00    0.00    0.00    0.17    0.00    0.00   95.70
+Average:       4    4.15    0.00    0.52    0.00    0.00    0.00    0.00    0.00    0.00   95.33
+Average:       5    4.12    0.00    1.20    0.00    0.00    0.00    0.17    0.00    0.00   94.51
+Average:       6    3.97    0.00    0.69    0.00    0.00    0.00    0.17    0.00    0.00   95.17
+Average:       7    3.29    0.00    0.52    0.00    0.00    0.00    0.00    0.00    0.00   96.19
+Average:       8    3.64    0.00    0.69    0.00    0.00    0.00    0.17    0.00    0.00   95.49
+Average:       9    5.37    0.00    0.35    0.00    0.00    0.00    0.17    0.00    0.00   94.11
+Average:      10    3.79    0.00    0.69    0.00    0.00    0.00    0.17    0.00    0.00   95.34
+Average:      11    3.78    0.00    1.03    0.00    0.00    0.00    0.17    0.00    0.00   95.02
+Average:      12    3.96    0.00    0.52    0.00    0.00    0.00    0.17    0.00    0.00   95.35
+Average:      13    4.66    0.00    0.52    0.00    0.00    0.00    0.17    0.00    0.00   94.65
+Average:      14    4.64    0.00    0.52    0.00    0.00    0.00    0.17    0.00    0.00   94.67
+Average:      15    4.29    0.00    0.69    0.00    0.00    0.00    0.00    0.00    0.00   95.03
+Average:      16    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00  100.00
+Average:      17    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00  100.00
+Average:      18    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00  100.00
+Average:      19    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00  100.00
+Average:      20    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00  100.00
+Average:      21    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00  100.00
+Average:      22    0.50    0.00    0.83    0.00    0.00    0.00    0.00    0.00    0.00   98.67
+Average:      23    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00  100.00
+Average:      24    0.00    0.00    0.00    0.00    0.00    0.00    0.17    0.00    0.00   99.83
+Average:      25    2.59    0.00    1.03    0.00    0.00    0.00    0.17    0.00    0.00   96.21
+Average:      26    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00  100.00
+Average:      27    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00  100.00
+Average:      28    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00  100.00
+Average:      29    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00  100.00
+Average:      30    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00  100.00
+Average:      31    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00  100.00
+
+
+
+
+
+
+***   g2.2xlarge   ***
+
+
+python 1-keras.py
+
+Using TensorFlow backend.
+I tensorflow/stream_executor/dso_loader.cc:111] successfully opened CUDA library libcublas.so locally
+I tensorflow/stream_executor/dso_loader.cc:111] successfully opened CUDA library libcudnn.so locally
+I tensorflow/stream_executor/dso_loader.cc:111] successfully opened CUDA library libcufft.so locally
+I tensorflow/stream_executor/dso_loader.cc:111] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:111] successfully opened CUDA library libcurand.so locally
+I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:925] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:951] Found device 0 with properties: 
+name: GRID K520
+major: 3 minor: 0 memoryClockRate (GHz) 0.797
+pciBusID 0000:00:03.0
+Total memory: 4.00GiB
+Free memory: 3.92GiB
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:972] DMA: 0 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] 0:   Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GRID K520, pci bus id: 0000:00:03.0)
+Epoch 1/10
+60000/60000 [==============================] - 5s - loss: 0.3113 - acc: 0.9013       
+Epoch 2/10
+60000/60000 [==============================] - 5s - loss: 0.0783 - acc: 0.9754     
+Epoch 3/10
+60000/60000 [==============================] - 5s - loss: 0.0621 - acc: 0.9809     
+Epoch 4/10
+60000/60000 [==============================] - 5s - loss: 0.0511 - acc: 0.9839     
+Epoch 5/10
+60000/60000 [==============================] - 5s - loss: 0.0421 - acc: 0.9865     
+Epoch 6/10
+60000/60000 [==============================] - 5s - loss: 0.0391 - acc: 0.9879     
+Epoch 7/10
+60000/60000 [==============================] - 5s - loss: 0.0347 - acc: 0.9888     
+Epoch 8/10
+60000/60000 [==============================] - 5s - loss: 0.0329 - acc: 0.9889     
+Epoch 9/10
+60000/60000 [==============================] - 5s - loss: 0.0309 - acc: 0.9902     
+Epoch 10/10
+60000/60000 [==============================] - 5s - loss: 0.0284 - acc: 0.9905     
+Train time: 56.0702960491 sec
+Error rate: 0.86 %
+
+
+
+nvidia-smi -l 3
+
++------------------------------------------------------+                       
+| NVIDIA-SMI 352.99     Driver Version: 352.99         |                       
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  GRID K520           Off  | 0000:00:03.0     Off |                  N/A |
+| N/A   61C    P0    69W / 125W |   3866MiB /  4095MiB |     70%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID  Type  Process name                               Usage      |
+|=============================================================================|
+|    0      1035    C   /usr/bin/python                                 36MiB |
+|    0      1866    C   python                                        3815MiB |
++-----------------------------------------------------------------------------+
+
+
+
+mpstat -P ALL 3
+
+10:45:20 PM  CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+10:45:23 PM  all    8.78    0.00    1.50    0.00    0.00    0.04    0.26    0.00    0.00   89.41
+10:45:23 PM    0   11.70    0.00    2.13    0.00    0.00    0.35    0.35    0.00    0.00   85.46
+10:45:23 PM    1   12.94    0.00    1.75    0.00    0.00    0.00    0.35    0.00    0.00   84.97
+10:45:23 PM    2    8.33    0.00    1.81    0.00    0.00    0.00    0.36    0.00    0.00   89.49
+10:45:23 PM    3    7.47    0.00    1.07    0.00    0.00    0.00    0.00    0.00    0.00   91.46
+10:45:23 PM    4    5.92    0.00    1.05    0.00    0.00    0.00    0.35    0.00    0.00   92.68
+10:45:23 PM    5    7.69    0.00    1.40    0.00    0.00    0.00    0.35    0.00    0.00   90.56
+10:45:23 PM    6    8.13    0.00    1.41    0.00    0.00    0.00    0.35    0.00    0.00   90.11
+10:45:23 PM    7    7.42    0.00    1.41    0.00    0.00    0.00    0.00    0.00    0.00   91.17
+
+
+
+***   disable GPU / CPU only - p2.xlarge 4 cores   ***
+
+CUDA_VISIBLE_DEVICES=-1 python 1-keras.py
+
+Using TensorFlow backend.
+I tensorflow/stream_executor/dso_loader.cc:111] successfully opened CUDA library libcublas.so locally
+I tensorflow/stream_executor/dso_loader.cc:111] successfully opened CUDA library libcudnn.so locally
+I tensorflow/stream_executor/dso_loader.cc:111] successfully opened CUDA library libcufft.so locally
+I tensorflow/stream_executor/dso_loader.cc:111] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:111] successfully opened CUDA library libcurand.so locally
+E tensorflow/stream_executor/cuda/cuda_driver.cc:491] failed call to cuInit: CUDA_ERROR_NO_DEVICE
+I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:153] retrieving CUDA diagnostic information for host: ip-172-31-6-187
+I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:160] hostname: ip-172-31-6-187
+I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:185] libcuda reported version is: 352.99.0
+I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:356] driver version file contents: """NVRM version: NVIDIA UNIX x86_64 Kernel Module  352.99  Mon Jul  4 23:52:14 PDT 2016
+GCC version:  gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.3)
+"""
+I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:189] kernel reported version is: 352.99.0
+I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:293] kernel version seems to match DSO: 352.99.0
+Epoch 1/10
+60000/60000 [==============================] - 32s - loss: 0.3104 - acc: 0.9018
+Epoch 2/10
+60000/60000 [==============================] - 32s - loss: 0.0770 - acc: 0.9765
+Epoch 3/10
+60000/60000 [==============================] - 32s - loss: 0.0604 - acc: 0.9806
+Epoch 4/10
+60000/60000 [==============================] - 32s - loss: 0.0501 - acc: 0.9841
+Epoch 5/10
+60000/60000 [==============================] - 32s - loss: 0.0416 - acc: 0.9863
+Epoch 6/10
+60000/60000 [==============================] - 32s - loss: 0.0398 - acc: 0.9875
+Epoch 7/10
+60000/60000 [==============================] - 32s - loss: 0.0339 - acc: 0.9890
+Epoch 8/10
+60000/60000 [==============================] - 32s - loss: 0.0322 - acc: 0.9897
+Epoch 9/10
+60000/60000 [==============================] - 32s - loss: 0.0308 - acc: 0.9903     
+Epoch 10/10
+60000/60000 [==============================] - 32s - loss: 0.0282 - acc: 0.9907     
+Train time: 326.480363846 sec
+Error rate: 0.87 %
+
+
+
+
+nvidia-smi -l 3
+
++------------------------------------------------------+
+| NVIDIA-SMI 352.99     Driver Version: 352.99         |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla K80           Off  | 0000:00:1E.0     Off |                    0 |
+| N/A   81C    P0    63W / 149W |    121MiB / 11519MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID  Type  Process name                               Usage      |
+|=============================================================================|
+|    0      1272    C   /usr/bin/python                                 64MiB |
++-----------------------------------------------------------------------------+
+
+
+
+mpstat -P ALL 3
+
+01:53:52 AM  CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+01:53:55 AM  all   54.60    0.00   22.00    0.00    0.00    0.00    0.09    0.00    0.00   23.31
+01:53:55 AM    0   54.55    0.00   20.98    0.00    0.00    0.35    0.35    0.00    0.00   23.78
+01:53:55 AM    1   55.94    0.00   20.28    0.00    0.00    0.00    0.00    0.00    0.00   23.78
+01:53:55 AM    2   51.57    0.00   24.74    0.00    0.00    0.00    0.00    0.00    0.00   23.69
+01:53:55 AM    3   55.94    0.00   22.03    0.00    0.00    0.00    0.35    0.00    0.00   21.68
+
+
+
+
+
+***   disable GPU / CPU only - p2.8xlarge 32 cores   ***
+
+CUDA_VISIBLE_DEVICES=-1 python 1-keras.py
+
+Using TensorFlow backend.
+I tensorflow/stream_executor/dso_loader.cc:111] successfully opened CUDA library libcublas.so locally
+I tensorflow/stream_executor/dso_loader.cc:111] successfully opened CUDA library libcudnn.so locally
+I tensorflow/stream_executor/dso_loader.cc:111] successfully opened CUDA library libcufft.so locally
+I tensorflow/stream_executor/dso_loader.cc:111] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:111] successfully opened CUDA library libcurand.so locally
+E tensorflow/stream_executor/cuda/cuda_driver.cc:491] failed call to cuInit: CUDA_ERROR_NO_DEVICE
+I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:153] retrieving CUDA diagnostic information for host: ip-172-31-37-94
+I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:160] hostname: ip-172-31-37-94
+I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:185] libcuda reported version is: 352.99.0
+I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:356] driver version file contents: """NVRM version: NVIDIA UNIX x86_64 Kernel Module  352.99  Mon Jul  4 23:52:14 PDT 2016
+GCC version:  gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.3)
+"""
+I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:189] kernel reported version is: 352.99.0
+I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:293] kernel version seems to match DSO: 352.99.0
+Epoch 1/10
+60000/60000 [==============================] - 13s - loss: 0.3113 - acc: 0.9015
+Epoch 2/10
+60000/60000 [==============================] - 13s - loss: 0.0756 - acc: 0.9761
+Epoch 3/10
+60000/60000 [==============================] - 13s - loss: 0.0617 - acc: 0.9808
+Epoch 4/10
+60000/60000 [==============================] - 13s - loss: 0.0512 - acc: 0.9835
+Epoch 5/10
+60000/60000 [==============================] - 13s - loss: 0.0421 - acc: 0.9868
+Epoch 6/10
+60000/60000 [==============================] - 12s - loss: 0.0401 - acc: 0.9875
+Epoch 7/10
+60000/60000 [==============================] - 12s - loss: 0.0356 - acc: 0.9883    
+Epoch 8/10
+60000/60000 [==============================] - 13s - loss: 0.0333 - acc: 0.9892     
+Epoch 9/10
+60000/60000 [==============================] - 12s - loss: 0.0312 - acc: 0.9900     
+Epoch 10/10
+60000/60000 [==============================] - 12s - loss: 0.0279 - acc: 0.9906     
+Train time: 131.895182848 sec
+Error rate: 0.91 %
+
+
+
+nvidia-smi -l 3
+
++------------------------------------------------------+
+| NVIDIA-SMI 352.99     Driver Version: 352.99         |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla K80           Off  | 0000:00:17.0     Off |                    0 |
+| N/A   57C    P0    55W / 149W |    121MiB / 11519MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   1  Tesla K80           Off  | 0000:00:18.0     Off |                    0 |
+| N/A   33C    P8    29W / 149W |     55MiB / 11519MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   2  Tesla K80           Off  | 0000:00:19.0     Off |                    0 |
+| N/A   44C    P8    27W / 149W |     55MiB / 11519MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   3  Tesla K80           Off  | 0000:00:1A.0     Off |                    0 |
+| N/A   38C    P8    28W / 149W |     55MiB / 11519MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   4  Tesla K80           Off  | 0000:00:1B.0     Off |                    0 |
+| N/A   41C    P8    26W / 149W |     55MiB / 11519MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   5  Tesla K80           Off  | 0000:00:1C.0     Off |                    0 |
+| N/A   35C    P8    29W / 149W |     55MiB / 11519MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   6  Tesla K80           Off  | 0000:00:1D.0     Off |                    0 |
+| N/A   43C    P8    26W / 149W |     55MiB / 11519MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   7  Tesla K80           Off  | 0000:00:1E.0     Off |                    0 |
+| N/A   37C    P8    29W / 149W |     55MiB / 11519MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID  Type  Process name                               Usage      |
+|=============================================================================|
+|    0      1484    C   /usr/bin/python                                 64MiB |
++-----------------------------------------------------------------------------+
+
+
+mpstat -P ALL 3
+
+Average:     CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+Average:     all   17.15    0.00   12.97    0.00    0.00    0.01    0.23    0.00    0.00   69.65
+Average:       0   16.99    0.00   13.63    0.00    0.00    0.35    0.18    0.00    0.00   68.85
+Average:       1   18.95    0.00   12.46    0.00    0.00    0.00    0.18    0.00    0.00   68.42
+Average:       2   19.48    0.00   13.22    0.00    0.00    0.00    0.35    0.00    0.00   66.96
+Average:       3   16.87    0.00   14.09    0.00    0.00    0.00    0.35    0.00    0.00   68.70
+Average:       4   19.04    0.00   11.92    0.00    0.00    0.00    0.18    0.00    0.00   68.86
+Average:       5   17.04    0.00   14.43    0.00    0.00    0.00    0.35    0.00    0.00   68.17
+Average:       6   17.37    0.00   13.86    0.00    0.00    0.00    0.18    0.00    0.00   68.60
+Average:       7   18.25    0.00   13.51    0.00    0.00    0.00    0.18    0.00    0.00   68.07
+Average:       8   17.57    0.00   13.57    0.00    0.00    0.00    0.35    0.00    0.00   68.52
+Average:       9   18.04    0.00   13.84    0.00    0.00    0.00    0.35    0.00    0.00   67.78
+Average:      10   17.40    0.00   13.01    0.00    0.00    0.00    0.18    0.00    0.00   69.42
+Average:      11   16.67    0.00   13.30    0.00    0.00    0.00    0.35    0.00    0.00   69.68
+Average:      12   17.38    0.00   12.23    0.00    0.00    0.00    0.18    0.00    0.00   70.21
+Average:      13   18.28    0.00   13.18    0.00    0.00    0.00    0.18    0.00    0.00   68.37
+Average:      14   18.05    0.00   12.57    0.00    0.00    0.00    0.18    0.00    0.00   69.20
+Average:      15   17.99    0.00   12.87    0.00    0.00    0.00    0.35    0.00    0.00   68.78
+Average:      16   15.88    0.00   12.91    0.00    0.00    0.00    0.35    0.00    0.00   70.86
+Average:      17   15.36    0.00   13.79    0.00    0.00    0.00    0.17    0.00    0.00   70.68
+Average:      18   15.06    0.00   13.49    0.00    0.00    0.00    0.18    0.00    0.00   71.28
+Average:      19   16.43    0.00   11.66    0.00    0.00    0.00    0.35    0.00    0.00   71.55
+Average:      20   16.90    0.00   11.85    0.00    0.00    0.00    0.35    0.00    0.00   70.91
+Average:      21   17.27    0.00   12.78    0.00    0.00    0.00    0.35    0.00    0.00   69.60
+Average:      22   16.67    0.00   11.63    0.00    0.00    0.00    0.35    0.00    0.00   71.35
+Average:      23   18.10    0.00   11.72    0.00    0.00    0.00    0.17    0.00    0.00   70.00
+Average:      24   15.59    0.00   13.31    0.00    0.00    0.00    0.18    0.00    0.00   70.93
+Average:      25   16.87    0.00   13.74    0.00    0.00    0.00    0.17    0.00    0.00   69.22
+Average:      26   16.72    0.00   12.72    0.00    0.00    0.00    0.17    0.00    0.00   70.38
+Average:      27   16.29    0.00   12.61    0.00    0.00    0.00    0.18    0.00    0.00   70.93
+Average:      28   16.46    0.00   12.61    0.00    0.00    0.00    0.18    0.00    0.00   70.75
+Average:      29   16.02    0.00   13.38    0.00    0.00    0.00    0.18    0.00    0.00   70.42
+Average:      30   15.92    0.00   13.49    0.00    0.00    0.00    0.35    0.00    0.00   70.24
+Average:      31   17.10    0.00   12.04    0.00    0.00    0.00    0.35    0.00    0.00   70.51
+
+
+
+
