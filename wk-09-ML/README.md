@@ -18,4 +18,9 @@ Slides [here](https://drive.google.com/open?id=1IXN6plzNzDXCdRrjvaNzm1NszVDISNU_
 R code and data in the subdirs above.
 
 
+#### Reading
+
+David Donoho: [50 years of Data Science](https://dl.dropboxusercontent.com/u/23421017/50YearsDataScience.pdf)
+
+
 
