@@ -8,12 +8,12 @@ library(mxnet)
 library(magrittr)
 
 
-train.x <- data.matrix(read_csv('X_train.csv', col_names = FALSE))
-test.x  <- data.matrix(read_csv('X_test.csv',  col_names = FALSE))
+train.x <- data.matrix(read_csv('wk-09-ML/1-DL_CNN/X_train.csv', col_names = FALSE))
+test.x  <- data.matrix(read_csv('wk-09-ML/1-DL_CNN/X_test.csv',  col_names = FALSE))
 train.x <- t(train.x/255)
 test.x  <- t(test.x/255)
-train.y <- read_csv('y_train.csv', col_names = FALSE)[[1]]
-test.y  <- read_csv('y_test.csv',  col_names = FALSE)[[1]]
+train.y <- read_csv('wk-09-ML/1-DL_CNN/y_train.csv', col_names = FALSE)[[1]]
+test.y  <- read_csv('wk-09-ML/1-DL_CNN/y_test.csv',  col_names = FALSE)[[1]]
 
 train.array <- train.x
 dim(train.array) <- c(28, 28, 1, ncol(train.x))
