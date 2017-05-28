@@ -2,6 +2,6 @@
 
 sudo pip install gpustat
 
-while true; do gpustat --no-color -c; sleep 1; done
+while true; do gpustat --no-color -c | grep -v ip-; sleep 1; done
 
 
