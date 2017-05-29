@@ -4,7 +4,27 @@
 
 #### Unix/cloud/repro/datavis/shiny
 
-**1.** ...
+**0.** What is UNIX
+
+**1.** Describe briefly the unix shell
+
+**2.** Describe the use of the unix cut command
+
+**3.** Describe the use of the unix awk command
+
+**4.** Describe the model of unix pipes
+
+**5.** Describe how the unix sort and uniq commands differ and how they are similar
+
+**6.** How does the unix file permission model work
+
+**7.** Is there a way to erase all files in the current directory, including all its sub-directories, using only one command
+
+**8.** Describe the model of string interpolation in the unix shell
+
+**9.** Compare and contrast relative vs absolute paths
+
+**10.** Write a command to download the file http://example.com/data.csv.gz, unzip it, and find the number of unique values of the 4th column of the file.
 
 
 #### Machine learning
