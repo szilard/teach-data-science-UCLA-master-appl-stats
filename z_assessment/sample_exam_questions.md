@@ -47,7 +47,7 @@
 
 **19.** Describe k-means clustering.
 
-**20.** Describe hierarchial clustering.
+**20.** Describe hierarchical clustering.
 
 
 #### Databases/big data
