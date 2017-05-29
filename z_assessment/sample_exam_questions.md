@@ -31,9 +31,23 @@
 
 **11.** What is regularization? Give an example.
 
-**12.** Describe k-means clustering.
+**12.** Describe the LASSO.
 
-**13.** Describe hierarchial clustering.
+**13.** Describe decision trees and how we fit them.
+
+**14.** Compare random forests and GBMs.
+
+**15.** Describe the main tuning parameters for GBMs. How do they relate to model complexity?
+
+**16.** Describe 3 tricks in training neural networks. 
+
+**17.** Describe grid and random search for hyper-parameter tuning.
+
+**18.** What are ensembles? What are some of the advantages and disadvantages of using them.
+
+**19.** Describe k-means clustering.
+
+**20.** Describe hierarchial clustering.
 
 
 #### Databases/big data
