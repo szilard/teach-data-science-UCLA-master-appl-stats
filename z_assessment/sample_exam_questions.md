@@ -52,6 +52,53 @@
 
 #### Databases/big data
 
-**1.** ...
+**1.** List at least 3 defining features of the relational model. 
+
+**2.** For each of the following acronyms, write what the letters standard for, 
+and then give a short definition of the concept (1-2 sentences): 
+- ETL
+- SQL
+- CRUD
+- RDBMS 
+
+**3.** Define the term ‘schema’. 
+
+**4.** Check any of the following which must be defined by the schema in a relational database system:
+- field names
+- table dimensions
+- operating system version
+- field types
+- primary key
+- programming language
+- table names
+
+**5a.** What does it mean to say that redis is an in-memory store? (1-2 sentences)
+
+**5b.** What is the primary advantage of using an in-memory datastore? (1 sentence)
+
+**5c.** What is the primary disadvantage of using an in-memory datastore? (1 sentence)
+
+**6.** Check any of the following that you would expect to see included in a connection string: 
+- number of records
+- programming language
+- host
+- port
+- username
+- client type
+- database version
+- password
+- filename
+
+**7.** What does it mean to say that our software or system is ‘distributed’? (1-2 sentences)
+
+**7b.** What is the primary advantage or motivation for using a distributed system? (1 sentence)
+
+**7c.** What is the primary disadvantage of using a distributed system? (1 sentence)
+
+**8.** What does HDFS stand for. What problem does HDFS solve? 
+
+**9.** In Apache Spark, what does the acronym RDD stand for. What problem does the RDD solve? 
+
+**10.** Why are there so many types of databases? 
 
 
