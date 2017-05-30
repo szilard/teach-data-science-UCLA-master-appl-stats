@@ -109,7 +109,7 @@ and then give a short definition of the concept (1-2 sentences):
 - password
 - filename
 
-**7.** What does it mean to say that our software or system is ‘distributed’? (1-2 sentences)
+**7a.** What does it mean to say that our software or system is ‘distributed’? (1-2 sentences)
 
 **7b.** What is the primary advantage or motivation for using a distributed system? (1 sentence)
 
