@@ -26,6 +26,72 @@
 
 **10.** Write a command to download the file http://example.com/data.csv.gz, unzip it, and find the number of unique values of the 4th column of the file.
 
+#### DataViz
+
+**1.** I described 7 possible things you can visualize, what are they?
+
+**2.** Describe uses of a diverging bar, when is it appropriate, draw one.
+
+**3.** Describe uses of a spine chart, when is it appropriate, draw one.
+
+**4.** Describe uses of an area chart, when is it appropriate, draw one.
+
+**5.** Describe uses of a scatterplot, when is it appropriate, draw one.
+
+**6.** Describe uses of a bubble chart, when is it appropriate, draw one.
+
+**7.** Describe uses of a heatmap,  when is it appropriate, draw one.
+
+**8.** Describe uses of a linechart, when is it appropriate, draw one.
+
+**9.** Name the major components of the grammar of graphics.
+
+**10.** Using ggplot and the iris dataset, what is the command for a scatterplot of Sepal Length and Width colored by species with dot area scaled by the difference between petal width and length?
+
+**11.** Describe the major components of a Shiny application
+
+**12.** Why won't this shiny code run:
+
+```
+library(shiny)
+
+shinyUI(fluidPage(
+
+  # Application title
+  titlePanel("Old Faithful Geyser Data"),
+
+  # Sidebar with a slider input for number of bins
+  sidebarLayout(
+    sidebarPanel(
+      sliderInput("bins",
+                  "Number of bins:",
+                  min = 1,
+                  max = 50,
+                  value = 30)
+    ),
+
+    # Show a plot of the generated distribution
+    mainPanel(
+      plotOutput("distPlot")
+    )
+  )
+))
+
+shinyServer(function(input, output) {
+  
+  output$plotOutput <- renderPlot({
+    
+    # generate bins based on input$bins from ui.R
+    x    <- faithful[, 2]
+    bins <- seq(min(x), max(x), length.out = input$bins + 1)
+    
+    # draw the histogram with the specified number of bins
+    hist(x, breaks = bins, col = 'darkgray', border = 'white')
+    
+  })
+  
+})
+```
 
 #### Machine learning
 
