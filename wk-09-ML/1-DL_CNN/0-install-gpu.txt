@@ -67,6 +67,15 @@ sudo ln /dev/null /dev/raw1394
 
 
 
+#### R keras 
+
+https://rstudio.github.io/keras/index.html#installation
+
+devtools::install_github("rstudio/keras")
+library(keras)
+install_tensorflow(gpu = TRUE)
+
+
 
 
 
