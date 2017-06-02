@@ -93,6 +93,28 @@ shinyServer(function(input, output) {
 })
 ```
 
+#### Reproducibility
+
+**1.** Define repeatability in the context of research
+
+**2.** Define reproducibility in the context of research
+
+**3.** Define replicability in the context of research
+
+**4.** Define computational reproducibility
+
+**5.** Define empirical reproducibility
+
+**6.** Define statistical reproducibility
+
+**7.** What is the primary difference in the execution lifecycle of a jupyter notebook vs a knitR document
+
+**8.** List and explain the components of a knitR document
+
+**9.** What is meant by the statement "shiny is a reactive framework"
+
+**10.** What are the commands to retrieve a git repository from github, modify a file, commit it, and push it back to github
+
 #### Machine learning
 
 **1.** Describe briefly the steps in a typical data science project.
