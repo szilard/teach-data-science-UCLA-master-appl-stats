@@ -31,7 +31,7 @@ Therefore, it is important to restate here that good statistical and theoretical
 
 [Week 1](wk-01-intro) \[4/5\]: Overview of data science. The elements of a data science project. Overview of tools (R/Python, databases, machine learning libraries, big data tools, workflow/reproducibility etc) 
 
-[Week 2](wk-02-unix-cloud) \[4/12\]: The Unix toolbox for manipulating files/text and automating tasks. Unix gone wrong, debugging the environment. Cloud computing for scaling up data science (demo). 
+[Week 2](wk-02-unix-cloud) \[4/12\]: The Unix toolbox for manipulating files/text and automating tasks. Cloud computing for scaling up data science. 
 
 [Week 3](wk-03-repro) \[4/19\]: Tools for reproducible research/productive data analysis and collaboration (Rmarkdown, Jupyter notebooks, git/Github). 
 
